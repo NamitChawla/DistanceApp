@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/latOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lat 1"
+        />
+
+    <EditText
+        android:id="@+id/longOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Long 1"
+        android:layout_below="@id/latOne"
+        />
+
+    <EditText
+        android:id="@+id/latTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lat 2"
+        android:layout_below="@id/longOne"
+        />
+
+    <EditText
+        android:id="@+id/longTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Long 2"
+        android:layout_below="@id/latTwo"
+        />
+    <Button
+        android:id="@+id/find_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Distance"
+        android:layout_below="@id/longTwo"
+        />
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
